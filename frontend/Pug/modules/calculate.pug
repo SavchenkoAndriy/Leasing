@@ -42,18 +42,20 @@ section(class='calculate' id='calculate')
                         p(id='result_sum') 90000000
                         | &nbsp
                         p(id='result_text') руб.
-                    div(class='result__some')
-                        p Расчёт приведён с вычетом НДС (
-                        p(id='result_one') 10 992
-                        | &nbsp
-                        p руб. -
-                        | &nbsp
-                        p(id='result_two') 1 832
-                        | &nbsp
-                        p руб. НДС =
-                        | &nbsp
-                        p(id='result_three') 9 160
-                        | &nbsp
-                        p руб.)
+                    div
+                        div(class='result__some')
+                            div Расчёт приведён с вычетом НДС
+                                | &nbsp
+                                div(id='result_one') (10 992
+                                    | &nbsp
+                                    div руб. -
+                                        | &nbsp
+                                        div(id='result_two') 1 832
+                                            | &nbsp
+                                            div руб. НДС =
+                                                | &nbsp
+                                                div(id='result_three') 9 160
+                                                    | &nbsp
+                                                    div руб.)
             div(class='calculate__foot')
                 button(class='calculate__foot-button') Отправить заявку

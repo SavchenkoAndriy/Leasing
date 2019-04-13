@@ -9,6 +9,11 @@
   background: white center
   font-size: 1.5rem
 
+@media only screen  and (max-width: 360px)
+  .calculate
+    height: 150vh
+
+
 .calculate__wrap
   height: 90%
   margin-top: 5%
@@ -21,6 +26,13 @@
     width: 95%
     margin: 5% auto
 
+@media only screen  and (max-width: 360px)
+  .calculate__wrap
+    height: 98%
+    width: 95%
+    margin: 0 auto
+    grid-template-rows: 1fr 4fr 1fr
+
 .calculate__text
   display: grid
   grid-template-rows: 1fr 1fr
@@ -28,6 +40,10 @@
     display: flex
     justify-content: center
     align-items: center
+
+@media only screen  and (max-width: 360px)
+  .calculate__text
+    text-align: center
 
 .calculate__text-h1
   font-size: 3.5rem
@@ -47,6 +63,14 @@
   .calculate__input
     display: grid
     grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr
+    grid-column-gap: 0
+    grid-row-gap: 0
+
+@media only screen  and (max-width: 360px)
+  .calculate__input
+    display: grid
+    grid-template-rows: 22% 22% 22% 34%
     grid-template-columns: 1fr
     grid-column-gap: 0
     grid-row-gap: 0
@@ -95,6 +119,12 @@
     color: #FF4500
     border: 0.1rem solid #999
 
+@media only screen  and (max-width: 360px)
+  .input-money-text, .input-month-text, .input-percents-text
+    color: #FF4500
+    border: 0.1rem solid #999
+    //height: 50%
+
 .input-money-range::-webkit-slider-thumb, .input-month-range::-webkit-slider-thumb, .input-percents-range::-webkit-slider-thumb
   -webkit-appearance: none
   width: 1rem
@@ -117,6 +147,12 @@
     justify-content: center
     align-items: center
 
+@media only screen  and (max-width: 360px)
+  .calculate__total
+    width: 98%
+    margin: 0 auto
+    padding: 0.5rem
+
 .calculate__total-text
   font-size: 2rem
 
@@ -126,11 +162,17 @@
 
 .result__some
   font-size: 1.5rem
-  display: inline
+  div
+    display: inline-block
+    text-align: center
 
 @media only screen  and (max-width: 760px)
   .result__some
     font-size: 1.7rem
+
+@media only screen  and (max-width: 360px)
+  .result__some
+    font-size: 1.5rem
 
 .input__text-middle
   display: flex

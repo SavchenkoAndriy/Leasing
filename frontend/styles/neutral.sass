@@ -7,12 +7,35 @@
   align-items: center
   font-size: 1.5rem
 
+@media only screen  and (max-width: 960px)
+  .neutral
+    height: 100vh
+
+@media only screen  and (max-width: 360px)
+  .neutral
+    height: 110vh
+    .container
+      width: 95%
+      height: 95%
+
 .neutral__wrap
   height: 80%
   width: 100%
   margin: 10% 0 0 0
   display: grid
   grid-template-rows: 1fr 5fr 2fr
+
+@media only screen  and (max-width: 960px)
+  .neutral__wrap
+    height: 100%
+    margin: 0
+    grid-template-rows: 1.5fr 4fr 1fr
+
+@media only screen  and (max-width: 360px)
+  .neutral__wrap
+    height: 100%
+    margin: 0
+    grid-template-rows: 1.5fr 4fr 1fr
 
 .neutral__title
   display: flex
@@ -31,7 +54,23 @@
 
 @media only screen  and (max-width: 960px)
   .neutral__body
-    grid-template-columns: 0.9fr 15fr 5fr
+    background: url('../img/work-1.jpg') no-repeat
+    height: 100%
+    background-size: cover
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    display: flex
+    align-items: center
+    justify-content: center
+
+@media only screen  and (max-width: 360px)
+  .neutral__body
+    background: url('../img/work-1.jpg') no-repeat
+    height: 100%
+    background-size: cover
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr
+
 
 .neutral__body-wrap
   grid-row-start: 2
@@ -39,11 +78,30 @@
   background-color: white
   opacity: 0.9
 
+@media only screen  and (max-width: 960px)
+  .neutral__body-wrap
+    grid-row-start: 1
+    grid-column-start: 1
+    width: 90%
+    height: 90%
+
+@media only screen  and (max-width: 360px)
+  .neutral__body-wrap
+    grid-row-start: 1
+    grid-column-start: 1
+    width: 95%
+    height: 96%
+    margin: 2% auto
+
 .some_wrap
   height: 96%
   margin: 1% 5%
   display: grid
   grid-template-rows: 3fr 4fr 2fr
+
+@media only screen  and (max-width: 360px)
+  .some_wrap
+    grid-template-rows: 40% 45% 15%
 
 .neutral__body-text
   display: flex
@@ -54,13 +112,27 @@
   display: grid
   grid-template-rows: 1fr 3fr
 
+@media only screen  and (max-width: 360px)
+  .neutral__body-action
+    grid-template-rows: 1fr 2.5fr
+
 .neutral__body-action__head
   font-size: 2.5rem
 
 .neutral__body-action__main
   width: 90%
   display: grid
-  grid-template-columns: 3fr 3fr
+  grid-template-columns: 1fr 1fr
+
+@media only screen  and (max-width: 960px)
+  .neutral__body-action__main
+    margin: 0 auto
+
+@media only screen  and (max-width: 360px)
+  .neutral__body-action__main
+    margin: 0 auto
+    width: 98%
+    grid-template-columns: 50% 50%
 
 .body-action__main__bloc-wrap
   height: 100%
@@ -79,6 +151,29 @@
     align-items: center
     justify-content: flex-start
     text-align: left
+
+@media only screen  and (max-width: 960px)
+  .body-action__main__bloc
+    height: 100%
+    width: 95%
+    margin: 0 auto
+    grid-template-rows: 35% 65%
+    p
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+
+@media only screen  and (max-width: 360px)
+  .body-action__main__bloc
+    height: 100%
+    width: 95%
+    margin: 0 auto
+    grid-template-rows: 35% 65%
+    p
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+
 
 .neutral__footer
   display: flex
