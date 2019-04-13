@@ -1,0 +1,152 @@
+.action-car
+  height: 160vh
+  position: relative
+  background-size: cover
+  display: flex
+  align-items: center
+  background: #f4f4f4 center
+  color: #333333
+
+.action-car-wrap__main
+  width: 86%
+  height: 90%
+  margin: 5% auto
+
+@media only screen  and (max-width: 760px)
+  .action-car-wrap__main
+    width: 95%
+
+.action-car-wrap__more
+  display: grid
+  grid-template-rows: 1fr 6fr
+
+@media only screen  and (max-width: 760px)
+  .action-car-wrap__more
+    height: 100%
+    margin: 0 auto
+
+.action-car__title
+  display: grid
+  grid-template-rows: 1fr 1fr
+
+.action-car__title-head
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 3.5rem
+
+.action-car__title-foot
+  display: flex
+  justify-content: center
+  font-size: 1.7rem
+  text-align: center
+
+.action-car__main
+  display: grid
+  grid-template-columns: 1fr 2.5rem 1fr
+
+@media only screen  and (max-width: 760px)
+  .action-car__main
+    display: grid
+    grid-template-columns: 1fr
+
+.action-car__main-block
+  display: grid
+  grid-template-rows: 1fr 0.3rem 1fr
+
+@media only screen  and (max-width: 760px)
+  .action-car__main-block
+    display: grid
+    grid-template-rows: 1fr 0.6rem 1.5fr
+
+.main-block__content-wrap
+  width: 90%
+  height: 90%
+  margin: 5% auto
+
+.main-block__picture
+  background-image: url(../img/start.png)
+
+.main-block__border
+  background-color: #f15920
+
+.main-block__content
+  color:  white
+  background-color: #4a4b55
+
+.content-wrap__more
+  height: 100%
+  display: grid
+  grid-template-rows: 1fr 2.5fr 1fr 1fr
+
+.main-block__content-title
+  display: grid
+  grid-template-rows: 1fr 1fr
+  p
+    display: flex
+    align-items: center
+    font-size: 2.5rem
+
+@media only screen  and (max-width: 760px)
+  .main-block__content-title
+    p
+      font-size: 4.5rem
+
+.content-main__wrap
+  height: 80%
+  margin: 5% auto
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr 1fr
+  font-size: 1.5rem
+  div
+    display: grid
+    grid-template-columns: 1fr 11fr
+
+.content-main__polygon
+  height: 50%
+  width: 50%
+  background-color: #f15920
+  clip-path: polygon(38% 77%, 100% 0, 100% 8%, 38% 100%, 0 48%, 0 40%)
+
+
+.main-block__content-button
+  display: flex
+  justify-content: center
+  align-items: center
+
+.content-button
+  background-color: #5c5d66
+  color: white
+  border: 2px solid white
+  width: 60%
+  height: 80%
+  font-size: 1.8rem
+  border-radius: 3px
+  cursor: pointer
+
+@media only screen  and (max-width: 760px)
+  .content-button
+    width: 100%
+    height: 60%
+
+
+.content-button:hover
+  color: #FF4500
+  border: 2px solid #FF4500
+  background-color: #4a4b55
+
+.main-block__content-footer
+  margin-top: 0.5rem
+  font-size: 1.2rem
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+@media only screen  and (max-width: 760px)
+  .main-block__content-footer
+    font-size: 1.5rem
+
+@media only screen  and (max-width: 760px)
+  .action-car__mob-none
+    display: none

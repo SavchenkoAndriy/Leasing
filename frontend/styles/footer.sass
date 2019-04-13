@@ -1,0 +1,186 @@
+@import "main"
+
+.footer
+  position: relative
+  background-size: cover
+  display: grid
+
+// форма заповнення початок
+
+.footer__form
+  width: 100%
+  height: 100vh
+  background-color: #f4f4f4
+
+.footer__form-wrap
+  width: 60%
+  height: 80vh
+  margin: 10vh auto
+  display: grid
+  grid-template-rows: repeat(5,1fr)
+
+.footer__form-title
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-title__wrap
+  font-size: 3.8rem
+  color: black
+
+.footer__form-text
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #666666
+
+.form-text__wrap
+  font-size: 1.8rem
+  a
+    font-size: 1.9rem
+    color: black
+
+.footer__form-input
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-input__wrap
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 5rem
+  input
+    width: 100%
+    height: 5rem
+    padding-left: 1.5rem
+    border: 2px solid #b6b7b8
+    border-radius: 0.5rem
+    color: #999d
+    font-size: 1.9rem
+    outline: none
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.75)
+
+.footer__form-text__error, .footer__form-phone__error
+  display: flex
+  justify-content: flex-end
+  p
+    display: none
+
+.footer__form-button
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-button
+  @include button
+  width: 18vw
+  height: 7.2vh
+  font-size: 1.75rem
+
+.footer__form-footer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-footer__wrap
+  width: 100%
+  height: 100%
+  display: grid
+  grid-template-rows: 1fr 1fr
+  font-size: 1.2rem
+  color: #999999
+
+.form-footer__linc
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 1.5rem
+  color: #666666
+  a
+    font-size: 1.5rem
+    color: #666666
+    text-decoration: underline
+    cursor: pointer
+
+// форма заповнення кінець
+// вк ютуб фейсбук початок
+
+.align
+  display: flex
+  align-items: center
+  justify-content: center
+
+.footer__social
+  background-color: #373944
+  width: 100%
+  height: 33vh
+
+.footer__social-wrap
+  width: 50%
+  height: 50%
+  display: grid
+  grid-template-rows: 2fr 1fr
+
+.social__column
+  width: 50%
+  margin: 0 auto
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+.social__column-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  div
+    width: 4.8rem
+    height: 4.8rem
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #6b6b6b
+
+.social__column-fb:hover
+  cursor: pointer
+  background-color: #3a5ba2
+
+.social__column-vk:hover
+  cursor: pointer
+  background-color: #4d76a4
+
+.social__column-yt:hover
+  cursor: pointer
+  background-color: #ff4d3f
+
+.social__column-yt
+  img
+    width: 60%
+    height: 60%
+
+.social__text
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 1.5rem
+  color: #999999
+
+// вк ютуб фейсбук кынець
+// текст футер
+
+.footer__text
+  width: 100%
+  background-color: #f4f4f4
+
+.footer__text-wrap
+  padding-top: 4rem
+  padding-bottom: 4rem
+  display: block
+  font-size: 1.4rem
+  line-height: 1.5
+  color: #999999
+  text-align: left
+
+
+

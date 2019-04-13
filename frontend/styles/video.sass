@@ -1,0 +1,110 @@
+iframe
+  width: 100%
+  height: 100%
+
+.video
+  height: 150vh
+  position: relative
+  background-size: cover
+  display: flex
+  align-items: center
+  background-color: white
+
+@media only screen  and (max-width: 760px)
+  .video
+    display: none
+    *
+      display: none
+
+.video__wrap
+  width: 100%
+  height: 90%
+  margin-top: 3%
+  margin-bottom: 7%
+
+.video-slide
+  height: 100%
+  display: grid
+  grid-template-rows: 2fr 6fr 1fr
+
+.video-slide__head-text
+  font-size: 4rem
+  color: black
+  display: flex
+  justify-content: center
+  align-items: center
+
+.video-slide__video
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 18fr 1fr
+  div
+    display: flex
+    justify-content: center
+    align-items: center
+
+.video-slide__video-wrap
+  background-color: white
+  height: 100%
+  width: 100%
+
+.video-slide__video-active
+  border: none
+  height: 100%
+  width: 100%
+  iframe
+    display: flex
+    border: none
+
+.video-slide__video-de-active
+  iframe
+    display: none
+
+.video-slide-right, .video-slide-left
+  height: 10%
+  width: 50%
+  border: 0
+  outline: none
+  cursor: pointer
+  background-color: white
+
+.left-polygon, .right-polygon
+  height: 100%
+  width: 100%
+  background-color: #d7d7d7
+
+.left-polygon
+  clip-path: polygon(100% 0, 10% 50%, 100% 100%, 90% 100%, 0 50%, 90% 0)
+
+.right-polygon
+  clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 100%, 90% 50%, 0 0)
+
+.video-slide__button
+  display: flex
+  justify-content: center
+  align-items: center
+
+.button_wrap
+  width: 20%
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  div
+    button
+      width: 2rem
+      height: 2rem
+      border: 0
+      border-radius: 100%
+      outline: none
+      cursor: pointer
+
+.video-btn-de-active
+  button
+    background-color: #999999
+
+.video-btn-de-active
+  button:hover
+    background-color: #666666
+
+.video-btn-active
+  button
+    background-color: #666666

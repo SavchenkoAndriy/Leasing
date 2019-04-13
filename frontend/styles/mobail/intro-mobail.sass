@@ -1,0 +1,204 @@
+@media only screen  and (max-width: 760px)
+  .intro
+    .container
+      .intro__wrap
+        width: 0
+        height: 0
+        *
+          display: none
+          font-size: 0
+          width: 0
+          height: 0
+
+.intro__wrap-mob
+  width: 100%
+  height: 100%
+  //background-color: red
+  font-size: 1.8rem
+  display: grid
+  grid-template-rows: 1fr 7fr
+
+// навыгацыя меню початок
+
+.navigation-mob
+  background-color: #666
+  width: 100%
+  height: 10%
+  position: fixed
+  z-index: 3
+
+.navigation__wrap-mob
+  margin: 0 auto
+  width: 95%
+  height: 100%
+  display: grid
+  grid-template-columns: 3fr 5fr 1fr
+
+.navigation__title-mob
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.navigation__number-mob
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  font-size: 1rem
+
+
+.navigation__number__wrap-mob
+  color: #d2cdca
+  span
+    color: white
+  font-size: 2.4rem
+  line-height: 1
+  display: grid
+  grid-template-rows: 1fr 1fr
+  div
+    display: flex
+    justify-content: flex-end
+
+.navigation__number__text-mob
+  align-items: flex-end
+  font-size: 1.7rem
+  line-height: 1.5
+
+.navigation__field-mob
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  width: 100%
+  height: 100%
+
+.navigation__field__wrap-mob
+  height: 50%
+  width: 50%
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr
+  cursor: pointer
+
+.navigation__field__line-mob
+  background-color: white
+  height: 3px
+  width: 100%
+// навыгацыя меня конець
+// навыгацыя поле початок
+
+.navigation__list-mob
+  position: fixed
+  height: 100vh
+  width: 50%
+  margin-left: 50%
+  background-color: #31344f
+  z-index: 2
+  display: none
+  align-items: center
+  justify-content: center
+
+.navigation__list__wrap-mob
+  width: 100%
+  height: 80%
+  display: grid
+  grid-template-rows: 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr
+
+.border-mob
+  width: 100%
+  height: 100%
+  background-color: #6b6b6b
+
+.navigation__item__wrap-mob
+  width: 80%
+  margin: 0 auto
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  text-align: left
+  a
+    font-size: 2.5rem
+    color: white
+
+.navigation__item__wrap-mob
+  a:hover
+    color: #e96b19
+    cursor: pointer
+
+// навыгацыя поле конець
+// мейн начало
+
+.intro__main-mob
+  z-index: 1
+  height: 100%
+  width: 95%
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+
+.intro__main__wrap-mob
+  width: 100%
+  height: 100%
+  display: grid
+  grid-template-rows: 1fr 3fr 1fr
+
+.main__header__wrap-mob
+  font-size: 4.6rem
+  line-height: 1.2
+
+.intro__main__form-mob
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.main__form__wrap-mob
+  width: 100%
+  height: 90%
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr 1fr
+
+.form__title-mob
+  font-size: 3.6rem
+  line-height: 1.2
+  display: flex
+  align-items: center
+  div
+    height: 60%
+    display: flex
+    align-items: flex-end
+
+.form__input-mob
+  height: 100%
+  width: 100%
+  display: flex
+  align-items: center
+  input
+    width: 100%
+    height: 60%
+    border: none
+
+.form__button__wrap-mob
+  height: 100%
+  width: 100%
+  display: flex
+  align-items: center
+  button
+    width: 40%
+    height: 60%
+    border: none
+
+
+
+
+.intro__main__footer-mob
+  font-size: 1.7rem
+  line-height: 1.5
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center

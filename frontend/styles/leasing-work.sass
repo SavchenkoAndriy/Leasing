@@ -1,0 +1,324 @@
+@import "main"
+@import "mobail/leasing-work-mob"
+
+.leasing-work
+  //background: linear-gradient(to top, #373944, #666666)
+  background-color: #373944
+  height: 250vh
+  display: grid
+  grid-template-rows: 1fr
+  margin: 0
+  padding: 0
+  border: 0
+  color: white
+  font-size: 1.3rem
+
+@media only screen  and (max-width: 760px)
+  .leasing-work
+    height: auto
+    .leasing-work__overlay
+      width: 0
+      height: 0
+      display: none
+      *
+        display: none
+        width: 0
+        height: 0
+
+.leasing-work__overlay
+  height: 100vh
+  background: url(../img/toun2.png) repeat-x 100vh 17vh
+  background-size: auto 35%
+  border-width: 0
+
+.leasing-work__wrap
+  height: 95%
+  margin-bottom: 5%
+  display: grid
+  grid-template-rows: 2fr 4fr 0.1fr 1fr
+
+.leasing-work__head-wrap
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  font-size: 3.8rem
+
+//    ФОТО ФУРИ ПОЧАТОК
+
+.slide-car__wrap
+  display: flex
+  align-items: flex-end
+
+.slide-car
+  width: 100%
+  height: 80%
+  display: grid
+  grid-template-rows: 3fr 1fr 1fr 1fr
+
+.slide-car__img-wrap
+  display: grid
+  grid-template-rows: 1fr
+
+.slide-car__img
+  width: 100%
+  height: 90%
+  display: flex
+  align-items: flex-end
+
+.slide-car__img-active
+  height: 90%
+  width: 20%
+  margin-left: 3% //3 17 33 47 63 77
+  img
+    height: 100%
+    width: 100%
+    transform: scale(-1, 1)
+
+@media only screen  and (max-width: 960px)
+  .slide-car__img-active
+    height: 70%
+
+//    ФОТО ФУРИ КІНЕЦЬ
+//    КНОПКА ПІД ФОТО ФУРИ ПОЧАТОК
+
+.slide-car__btn
+  height: 100%
+  width: 90%
+  margin-right: 5%
+  margin-left: 5%
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+
+.btn__wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  a
+    color: white
+
+.btn__active
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  background: white
+  border-radius: 100%
+  width: 6vh
+  height: 6vh
+  border: none
+  outline: none
+  cursor: pointer
+
+.btn__de-active
+  background: #f15920
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  border-radius: 100%
+  width: 6vh
+  height: 6vh
+  border: none
+  outline: none
+  cursor: pointer
+
+.btn-text__de-active
+  display: none
+
+.btn-text-one
+  display: none
+
+.btn-img__de-active
+  display: none
+
+//    КНОПКА ПІД ФОТО ФУРИ КІНЕЦЬ
+//    ТЕКСТ ПІД КНОПКОЮ ПОЧАТОК
+
+.slide-car__text-wrap
+  width: 90%
+  margin: 0 auto
+
+.text__wrap
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  div
+    display: grid
+    grid-template-rows: 1fr 1fr
+    p
+      display: flex
+      align-items: center
+      justify-content: center
+
+.slide-car__text
+  height: 100%
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+
+.text__active
+  color: white
+
+.text__de-active
+  color: #f15920
+
+//    ТЕКСТ ПІД КНОПКОЮ КІНЕЦЬ
+//    ТРИКУТНИК ПІД ТЕКСТОМ ПОЧАТОК
+
+.slide-car__slider-wrap
+  width: 90%
+  margin: 0 auto
+  display: flex
+  align-items: flex-end
+
+.slide-car__slider
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+
+.slide__wrap
+  display: flex
+  align-items: flex-end
+  justify-content: center
+.slide-car__active
+  width: 3rem
+  height: 2rem
+  clip-path: polygon(50% 0, 100% 100%, 0 100%)
+  background: white
+  z-index: 1
+
+.slide-car__de-active
+  display: none
+
+.slide-car-pointer__active
+  width: 3rem
+  height: 2rem
+  clip-path: polygon(50% 0, 100% 100%, 0 100%)
+  background: #373944
+  z-index: 2
+  margin-top: 0.3rem
+
+.slide-car-pointer__de-active
+  display: none
+
+//    ТРИКУТНИК ПІД ТЕКСТОМ КІНЕЦЬ
+//    ЛІНІЯ ПІД КНОПКАМИ + ТЕКСТ ПІД ЛІНІЄЮ ПОЧАТОК
+
+.leasing-work__line
+  width: 90%
+  margin: 0 auto
+  height: 0.2rem
+  background: white
+  clip-path: polygon(50% 0%, 100% 50%, 100% 50%, 50% 100%, 0 50%, 0 50%)
+
+.car_text__active
+  display: grid
+  grid-template-rows: 1fr 1fr
+  margin-top: 1rem
+  p
+    display: flex
+    justify-content: center
+    margin-top: 0.5rem
+
+.car_text__de-active
+  display: none
+
+// ЛІНІЯ ПІД КНОПКАМИ + ПІД ЛІНІЄЮ ТЕКСТ КІНЕЦЬ
+
+.leasing-question__overlay
+  height: 150vh
+  background-color: white
+
+@media only screen  and (max-width: 760px)
+  .leasing-question__overlay
+    height: 0
+    width: 0
+    display: none
+
+.leasing-question__wrap
+  color: black
+  height: 90%
+  margin-bottom: 5%
+  margin-top: 5%
+  display: grid
+  grid-template-rows: 1fr 5fr 1fr
+
+
+.leasing-question__header
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 3.5rem
+
+.leasing-question__main
+  display: grid
+  grid-template-columns: 1fr 1px 1fr
+
+
+.main__column-border
+  background-color: #d7d7d7
+
+
+.main__column-wrap
+  width: 90%
+  margin-left: 5%
+  height: 100%
+  display: grid
+  grid-template-rows: 1fr 1px 1fr
+
+.column-row-border
+  background-color: #d7d7d7
+
+.row__wrap
+  height: 100%
+  width: 100%
+  display: grid
+  grid-template-rows: 5fr 1fr 5fr
+
+.row__wrap-no-img
+  height: 45%
+  width: 100%
+  margin-top: 5%
+  display: grid
+  grid-template-rows: 1fr 1fr
+
+.row__img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.row__img-wrap
+  width: 40%
+  height: 70%
+  img
+    width: 100%
+    height: auto
+
+.row__title
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 2rem
+
+.row__text
+  color: #666666
+  width: 95%
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 1.5rem
+
+.leasing-question__footer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.footer__button
+  @include button
+  width: 25rem
+  height: 5rem
+  font-size: 1.8rem
+
+.footer__button:hover
+  background-color: #e96b19

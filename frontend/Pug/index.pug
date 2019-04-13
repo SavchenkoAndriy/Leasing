@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+    head
+        title Leasing Work
+        link(rel='icon' type='image/png' href='./img/logo.png')
+        link(rel='stylesheet' href='css/reset.css')
+        link(rel='stylesheet' href='css/index.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(type='text/javascript' src='js/jquery.maskedinput.js')
+        script(type='text/javascript' src='js/main.js')
+    body(class='page')
+        div(id='scrollTop')
+            div(class='scrollTop-wrap')
+        div(class='page_wrap')
+            div(class='navigation default-hide' id='navigation-hide')
+                div(class='navigation__wrap opacity fixed_wrap-hide' id='navigation__wrap-hide')
+                    div(class='navigation__button navigation__calculate')
+                        div(class='navigation__button-wrap')
+                            a(href='#calculate' class='calculate1') Калькулятор
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__action')
+                        div(class='navigation__button-wrap')
+                            a(href='#action' class='action1') Акции
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__video')
+                        div(class='navigation__button-wrap')
+                            a(href='#video' class='video1') Наши клиенты
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__leasing-work')
+                        div(class='navigation__button-wrap')
+                            a(href='#leasing-work' class='leasing-work-1') Как работает лизинг
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__question')
+                        div(class='navigation__button-wrap')
+                            a(href='#question' class='question1') Частые вопросы
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__info')
+                        div(class='navigation__button-wrap')
+                            a(href='#navigation__info' class='navigation__info1') О компании
+                    div(class='baffler')
+                        div
+                    div(class='navigation__button navigation__office')
+                        div(class='navigation__button-wrap')
+                            a(href='#navigation__office' class='navigation__office1') Наши офисы
+            include modules/intro
+            include modules/neitral
+            include modules/calculate
+            include modules/action-car
+            include modules/video
+            include modules/leasing-work
+            include modules/question
+            include modules/info
+            include modules/office
+            include modules/footer

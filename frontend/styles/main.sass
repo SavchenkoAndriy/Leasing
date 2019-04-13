@@ -1,0 +1,105 @@
+*
+  margin: 0
+  padding: 0
+  z-index: 0
+
+input:focus::-webkit-input-placeholder
+  color: transparent
+
+html
+  font-size: 10px
+  font-family: sans-serif
+
+@media only screen  and (max-width: 1224px)
+  html
+    font-size: 10px
+
+@media only screen  and (min-width: 1824px)
+  html
+    font-size: 12px
+
+@media only screen  and (max-width: 1024px)
+  html
+    font-size: 8px
+
+@media only screen  and (max-width: 768px)
+  html
+    font-size: 7px
+
+//@media (min-width: 1500px)
+//  html
+//    font-size: 12px
+//
+//@media (min-width: 500px)
+//  html
+//    font-size: 8px
+
+//.page
+//  font-family: 'Raleway', sans-serif
+//  font-size: 1.4rem
+//  color: #6c7279
+//  overflow-x: hidden
+//
+//.page__wrap
+//  max-width: 1920px
+//  margin: 0
+
+.container
+  width: 86%
+  height: 100%
+  margin: 0 auto
+
+@media only screen  and (max-width: 1224px)
+  .container
+    width: 86%
+
+@media only screen  and (min-width: 1824px)
+  .container
+    width: 80%
+
+@media only screen  and (max-width: 1024px)
+  .container
+    width: 92%
+
+@media only screen  and (max-width: 768px)
+  .container
+    width: 100%
+
+img
+  width: 2rem
+  height: 2rem
+
+@mixin button
+  height: 4rem
+  width: 20rem
+  color: white
+  background-color: rgb(245, 105, 32) //hover 233, 107, 25
+  border: none
+  border-radius: 0.3rem
+  font-weight: 600
+  cursor: pointer
+
+
+#scrollTop
+  width: 7vh
+  height: 7vh
+  border: 0.2rem solid #ccc
+  border-radius: 100%
+  background: grey
+  text-align: center
+  position: fixed
+  bottom: 84vh
+  right: 5vw
+  cursor: pointer
+  display: none
+  color: #333
+  opacity: 0.8
+  z-index: 10
+
+
+.scrollTop-wrap
+  background-color: white
+  width: 36%
+  height: 36%
+  margin: 32%
+  clip-path: polygon(50% 0, 0 45%, 0 50%, 45% 15%, 45% 100%, 55% 100%, 55% 15%, 100% 50%, 100% 45%)

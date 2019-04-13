@@ -1,0 +1,59 @@
+section(class='calculate' id='calculate')
+    div(class='container')
+        div(class='calculate__wrap')
+            div(class='calculate__text')
+                p(class='calculate__text-h1') Калькулятор лизинга
+                p(class='calculate__text-h2') Сделайте предварительный расчет ежемесячного платежа по лизингу
+            div(class='calculate__input')
+                div(class='calculate__input-money')
+                    div(class='grid-row-1-1')
+                        p(class='input__text') Стоимость авто
+                        div(class='input__wrap')
+                            div(class='input__flex-center')
+                                input(class='input-money-text' type='text' id='money-text' value='500000' step='100000' min='500000' max='15000000')
+                            p(class='input__text-middle') руб.
+                            p(class='input__text-right') до 15 000 000 руб.
+                    div(class='input__flex-center')
+                        input(class='input-money-range' type='range' id='money-range' value='500000' step='100000' min='500000' max='15000000')
+                div(class='calculate__input-percents')
+                    div(class='grid-row-1-1')
+                        p(class='input__text') Аванс
+                        div(class='input__wrap')
+                            div(class='input__flex-center')
+                                input(class='input-percents-text' type='text' id='percents-text' value='15' step='1' min='15' max='49')
+                            p(class='input__text-middle') %
+                            p(class='input__text-right') от 15% до 49%
+                    div(class='input__flex-center')
+                        input(class='input-percents-range' type='range' id='percents-range' value='15' step='1' min='15' max='49')
+                div(class='calculate__input-month')
+                    div(class='grid-row-1-1')
+                        p(class='input__text') Срок
+                        div(class='input__wrap')
+                            div(class='input__flex-center')
+                                input(class='input-month-text' type='text' id='month-text' value='12' step='1' min='12' max='60')
+                            p(class='input__text-middle') мес.
+                            p(class='input__text-right') от 12 мес. до 60 мес.
+                    div(class='input__flex-center')
+                        input(class='input-month-range' type='range' id='month-range' value='12' step='1' min='12' max='60')
+                div(class='calculate__total')
+                    div(class='calculate__total-text')
+                        p Ежемесячный платёж
+                    div
+                        p(id='result_sum') 90000000
+                        | &nbsp
+                        p(id='result_text') руб.
+                    div(class='result__some')
+                        p Расчёт приведён с вычетом НДС (
+                        p(id='result_one') 10 992
+                        | &nbsp
+                        p руб. -
+                        | &nbsp
+                        p(id='result_two') 1 832
+                        | &nbsp
+                        p руб. НДС =
+                        | &nbsp
+                        p(id='result_three') 9 160
+                        | &nbsp
+                        p руб.)
+            div(class='calculate__foot')
+                button(class='calculate__foot-button') Отправить заявку

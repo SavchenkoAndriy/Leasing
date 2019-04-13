@@ -1,0 +1,127 @@
+.question
+  background: #f4f4f4
+  height: 100%
+  width: 100%
+  display: grid
+  grid-template-rows: 1fr
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 1.5rem
+
+.question__title
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 4rem
+  color: black
+
+.question__wrap
+  margin-top: 4rem
+  width: 100%
+  display: grid
+  grid-template-rows: 17rem 1fr
+
+.question__main-wrap
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-column-gap: 2rem
+  margin-bottom: 15rem
+
+.question__column
+  width: 100%
+
+.question__column-wrap
+  display: grid
+  grid-row-gap: 2rem
+
+.question__row
+  width: 100%
+
+.question__row-wrap
+  width: 100%
+  display: flex
+
+.question__row-item-wrap
+  height: 100%
+  width: 100%
+
+.question__row-item
+  cursor: pointer
+  width: 100%
+  height: 8rem
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgb(131, 132, 139)
+  color: white
+
+.question__row-item:hover
+  height: 7.8rem
+  background-color: #595b63
+  border-top: 0.2rem solid #e96b19
+  div
+    margin-bottom: 0.4rem
+
+.row-item-active
+  height: 7.8rem
+  background-color: #595b63
+  border-top: 0.2rem solid #e96b19
+  div
+    margin-bottom: 0.4rem
+
+.question__text
+  height: 50%
+  width: 60%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+
+@media only screen  and (max-width: 960px)
+  .question__text
+    height: 70%
+    width: 80%
+
+.question__polygon-wrap
+  width: 30%
+  height: 50%
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+
+@media only screen  and (max-width: 960px)
+  .question__polygon-wrap
+    width: 10%
+    height: 70%
+
+.question__polygon-active
+  width: 1rem
+  height: 1rem
+  background-color: white
+  clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 51% 51%, 0 100%, 0 50%)
+
+.question__polygon-de-active
+  width: 1rem
+  height: 1rem
+  background-color: white
+  clip-path: polygon(50% 50%, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)
+
+.question__row-item-big
+  width: 100%
+  height: 0
+  font-size: 0
+  opacity: 0
+  background-color: #595b63
+  color: white
+  display: flex
+  align-items: center
+  justify-content: center
+
+.question__text-hide
+  height: 100%
+  width: 90%
+  margin-bottom: 2rem
+  margin-top: 1rem
+  p
+    margin-bottom: 1.5rem

@@ -1,0 +1,295 @@
+@import "main"
+@import "mobail/intro-mobail"
+
+a
+  text-decoration: none
+  color: white
+
+.intro
+  height: 120vh
+  position: relative
+  background-size: cover
+  background: url(../img/start.png) center
+  z-index: 1
+  display: flex
+  align-items: center
+  color: white
+
+@media only screen  and (max-width: 760px)
+  .intro
+    height: 100vh
+
+.intro__overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  margin: 0
+  background-color: #31344f
+  opacity: .6
+  z-index: -1
+
+.default-hide
+  display: none
+  *
+    height: 0
+    width: 0
+
+@media only screen  and (max-width: 760px)
+  .default-hide
+    display: none
+    *
+      height: 0
+      width: 0
+
+.fixed-hide
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: rgba(63, 63, 74, 0.9)
+  outline: none
+  z-index: 99999
+
+.fixed_wrap-hide
+  width: 86%
+  margin-left: 7%
+
+.fixed
+  display: none
+  *
+    height: 0
+    width: 0
+
+.button
+  @include button
+  height: 5rem
+  width: 25rem
+
+.intro__wrap
+  height: 100%
+  display: grid
+  grid-template-rows: 2fr 5fr
+
+.intro__head
+  display: grid
+  grid-template-rows: 2fr 1fr
+
+
+// шапка початок
+
+.intro__head-content
+  display: flex
+  align-items: center
+
+.head-content-wrap
+  width: 100%
+  display: grid
+  grid-template-columns: 5fr 2fr 1fr
+
+.head-content__number
+  display: flex
+  align-items: flex-end
+
+.head-content__logo
+  font-size: 3.5rem
+  display: flex
+  align-items: center
+
+.head-content__number-wrap
+  color: #d2cdca
+  span
+    color: white
+  font-size: 2.6rem
+  display: grid
+  grid-template-rows: 2fr 1fr
+  div
+    display: flex
+    justify-content: flex-end
+
+.cursor
+  cursor: pointer
+  align-items: flex-end
+
+.head-content__text
+  align-items: flex-end
+  font-size: 1.5rem
+
+.head-content__button-wrap
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+
+.head-content__button
+  @include button
+  align-items: flex-end
+  width: 22rem
+  height: 4.3rem
+  border-radius: 0.5rem
+
+.head-content__button:hover
+  background-color: #e96b19
+
+// шапка кінець
+// навигація початок
+
+.navigation__wrap
+  display: grid
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr
+
+.navigation__wrap-fix
+  display: grid
+  background-color: rgba(63, 63, 74, 1)
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr
+
+.navigation__button
+  display: flex
+  justify-content: center
+  height: 5rem
+  align-items: center
+  font-size: 1.5rem
+  text-align: center
+
+.navigation__button:hover
+  background-color: rgba(255,255,255,1)
+  border-top: 0.3rem rgb(241, 89, 32) solid
+  height: 4.7rem
+  transition-duration: 0.3s
+  a
+    margin-bottom: 0.3rem
+    transition-duration: 0.3s
+    color: black
+
+.navigation__button-wrap
+  display: flex
+  justify-content: center
+  a
+    display: flex
+    justify-content: center
+    height: 5rem
+    align-items: center
+    text-decoration: none
+
+.active-hover
+  background-color: rgba(255,255,255,1)
+  border-top: 0.3rem rgb(241, 89, 32) solid
+  height: 4.7rem
+
+.act
+  margin-bottom: 0.3rem
+  color: black
+
+.baffler
+  display: flex
+  justify-content: center
+  align-items: center
+  div
+    width: 0.1rem
+    background-color: grey
+    height: 3rem
+
+// навігація кінець
+// мейн початок
+
+.intro__main
+  display: grid
+  grid-template-rows: 2fr 2fr 1fr
+
+.intro__main-header
+  display: grid
+  grid-template-rows: 1fr 2fr 2fr 1fr
+  div
+    display: flex
+    align-items: center
+    font-size: 6.8rem
+
+.intro__main-header-one
+  grid-row-start: 2
+
+.intro__main-header-two
+  grid-row-start: 3
+
+.intro__main-form
+  display: grid
+  grid-template-rows: 1fr 1fr
+
+.main-form__button
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+.button-name, .button-number, .button-click
+  display: flex
+  align-items: center
+  input
+    width: 25rem
+    height: 5.5rem
+    border-radius: 0.3rem
+    border: 0
+    padding-left: 1.5rem
+    outline: none
+    font-size: 1.8rem
+
+@media only screen  and (max-width: 960px)
+  .main-form__button
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 5rem
+
+.button-click
+  button:hover
+    background-color: #e96b19
+
+.button-click
+  button
+    height: 5.5rem
+    font-size: 1.8rem
+    background-color: #f56920
+
+.main-form__text
+  display: flex
+  align-items: center
+  font-size: 3.8rem
+  line-height: 2.7rem
+
+.intro__main-footer
+  display: grid
+  grid-template-rows: repeat(5, 1fr)
+  p
+    display: flex
+    align-items: center
+    font-size: 1.8rem
+
+.intro__main-footer-text-one
+  grid-row-start: 1
+
+.intro__main-footer-text-two
+  grid-row-start: 2
+  a
+    text-decoration: underline
+    cursor: pointer
+
+// мейн кінець
+
+.button-name__wrap, .button-number__wrap, .button-click__wrap
+  display: grid
+  grid-template-rows: 1fr 20px
+
+.button-name__error, .button-number__error, .button-click__error
+  display: flex
+  justify-content: flex-end
+  font-size: 1.2rem
+  color: #FF4500
+  p
+    display: none
+
+@media only screen  and (min-width: 760px)
+  .intro
+    .container
+      .intro__wrap-mob
+        width: 0
+        height: 0
+        *
+          display: none
+          font-size: 0
+          width: 0
+          height: 0

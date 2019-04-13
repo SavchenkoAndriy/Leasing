@@ -1,0 +1,169 @@
+@import "main"
+
+.calculate
+  height: 120vh
+  position: relative
+  background-size: cover
+  display: flex
+  align-items: center
+  background: white center
+  font-size: 1.5rem
+
+.calculate__wrap
+  height: 90%
+  margin-top: 5%
+  margin-bottom: 5%
+  display: grid
+  grid-template-rows: 1fr 2fr 1fr
+
+@media only screen  and (max-width: 760px)
+  .calculate__wrap
+    width: 95%
+    margin: 5% auto
+
+.calculate__text
+  display: grid
+  grid-template-rows: 1fr 1fr
+  p
+    display: flex
+    justify-content: center
+    align-items: center
+
+.calculate__text-h1
+  font-size: 3.5rem
+
+.calculate__text-h2
+  font-size: 1.8rem
+  color: #666
+
+.calculate__input
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-column-gap: 5rem
+  grid-row-gap: 5rem
+
+@media only screen  and (max-width: 760px)
+  .calculate__input
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr
+    grid-column-gap: 0
+    grid-row-gap: 0
+
+.calculate__input-money, .calculate__input-percents, .calculate__input-month
+  display: grid
+  grid-template-rows: 2fr 1fr
+
+.input__text
+  display: flex
+  align-items: center
+  font-size: 2.3rem
+  color: #666
+  line-height: 1.5
+
+.grid-row-1-1
+  display: grid
+  grid-template-rows: 1fr 1fr
+
+.input__wrap
+  display: grid
+  grid-template-columns: 3fr 1fr 6fr
+
+.input__flex-center
+  display: flex
+  align-items: center
+
+.input-money-range, .input-month-range, .input-percents-range
+  -webkit-appearance: none
+  width: 100%
+  outline : none
+  background: -webkit-linear-gradient(left ,#f15920 0%,#f15920 0%,#ccc 0%, #ccc 100%)
+
+.input-money-text, .input-month-text, .input-percents-text
+  -webkit-appearance: none
+  border: 0.1rem solid #f15920
+  border-radius: 0.3rem
+  padding-left: 1.5rem
+  outline: none
+  font-size: 1.8rem
+  height: 100%
+  width: 100%
+
+@media only screen  and (max-width: 760px)
+  .input-money-text, .input-month-text, .input-percents-text
+    color: #FF4500
+    border: 0.1rem solid #999
+
+.input-money-range::-webkit-slider-thumb, .input-month-range::-webkit-slider-thumb, .input-percents-range::-webkit-slider-thumb
+  -webkit-appearance: none
+  width: 1rem
+  height: 1.7rem
+  background: #3e3f49 //#f15920 //#D4D4D4
+  cursor: pointer
+  //border: 1px solid red
+  transition: .1s
+  //clip-path: polygon(50% 0, 100% 100%, 0 100%)
+  //margin-top: 30px
+
+.calculate__total
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr
+  border: 0.2rem solid #f15920
+  border-radius: 0.2rem
+  padding: 1rem
+  div
+    display: flex
+    justify-content: center
+    align-items: center
+
+.calculate__total-text
+  font-size: 2rem
+
+#result_sum ,#result_text
+  font-size: 3.5rem
+  color: #f15920
+
+.result__some
+  font-size: 1.5rem
+  display: inline
+
+@media only screen  and (max-width: 760px)
+  .result__some
+    font-size: 1.7rem
+
+.input__text-middle
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #999
+  font-size: 1.6rem
+
+.input__text-right
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  color: #999
+  font-size: 1.8rem
+  line-height: 1.5
+
+.calculate__foot
+  display: flex
+  justify-content: center
+  align-items: center
+
+.calculate__foot-button
+  @include button
+  height: 5rem
+  font-size: 1.8rem
+  background-color: #f56920
+
+@media only screen  and (max-width: 760px)
+  .calculate__foot-button
+    height: 6rem
+    font-size: 1.5rem
+    line-height: 1.5
+    background-color: #f56920
+
+.calculate__foot-button:hover
+  background-color: #e96b19
