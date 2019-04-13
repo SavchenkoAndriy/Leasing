@@ -5,6 +5,12 @@
   background-size: cover
   display: grid
 
+@media only screen  and (max-width: 760px)
+  .footer
+    .footer__form
+      .container
+        width: 95%
+
 // форма заповнення початок
 
 .footer__form
@@ -12,12 +18,21 @@
   height: 100vh
   background-color: #f4f4f4
 
+@media only screen  and (max-width: 760px)
+  .footer__form
+    height: 90vh
+
 .footer__form-wrap
   width: 60%
   height: 80vh
   margin: 10vh auto
   display: grid
   grid-template-rows: repeat(5,1fr)
+
+@media only screen  and (max-width: 760px)
+  .footer__form-wrap
+    width: 100%
+    grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr
 
 .footer__form-title
   display: flex
@@ -27,6 +42,13 @@
 .form-title__wrap
   font-size: 3.8rem
   color: black
+
+@media only screen  and (max-width: 760px)
+  .form-title__wrap
+    width: 80%
+    font-size: 3.6rem
+    text-align: center
+    line-height: 1.2
 
 .footer__form-text
   display: flex
@@ -61,6 +83,18 @@
     outline: none
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.75)
 
+@media only screen  and (max-width: 760px)
+  .form-input__wrap
+    height: 100%
+    grid-template-columns: 1fr
+    grid-template-rows: 50% 50%
+    grid-column-gap: 0
+    input
+      width: 95%
+      height: 6rem
+      box-shadow: none
+
+
 .footer__form-text__error, .footer__form-phone__error
   display: flex
   justify-content: flex-end
@@ -78,6 +112,12 @@
   height: 7.2vh
   font-size: 1.75rem
 
+@media only screen  and (max-width: 760px)
+  .form-button
+    min-width: 29rem
+    font-size: 1.65rem
+    line-height: 1.5
+
 .footer__form-footer
   display: flex
   align-items: center
@@ -91,6 +131,10 @@
   font-size: 1.2rem
   color: #999999
 
+@media only screen  and (max-width: 760px)
+  .form-footer__wrap
+    font-size: 1.7rem
+
 .form-footer__linc
   display: flex
   align-items: center
@@ -102,6 +146,12 @@
     color: #666666
     text-decoration: underline
     cursor: pointer
+
+@media only screen  and (max-width: 760px)
+  .form-footer__linc
+    text-align: center
+    width: 80%
+    margin: 0 auto
 
 // форма заповнення кінець
 // вк ютуб фейсбук початок
@@ -116,17 +166,29 @@
   width: 100%
   height: 33vh
 
+@media only screen  and (max-width: 760px)
+  .footer__social
+    height: 25vh
+    min-height: 20rem
+
 .footer__social-wrap
+  min-height: 15rem
   width: 50%
   height: 50%
   display: grid
   grid-template-rows: 2fr 1fr
 
+@media only screen  and (max-width: 760px)
+  .footer__social-wrap
+    width: 95%
+
 .social__column
+  min-width: 25rem
   width: 50%
   margin: 0 auto
   display: grid
   grid-template-columns: 1fr 1fr 1fr
+
 
 .social__column-wrap
   display: flex
@@ -140,6 +202,16 @@
     align-items: center
     justify-content: center
     background-color: #6b6b6b
+
+@media only screen  and (max-width: 760px)
+  .social__column-wrap
+    div
+      width: 7rem
+      height: 7rem
+      img
+        width: 65%
+        height: 65%
+
 
 .social__column-fb:hover
   cursor: pointer
@@ -158,6 +230,7 @@
     width: 60%
     height: 60%
 
+
 .social__text
   display: flex
   align-items: center
@@ -166,12 +239,24 @@
   font-size: 1.5rem
   color: #999999
 
+@media only screen  and (max-width: 760px)
+  .social__text
+    font-size: 1.3rem
+    line-height: 1.5
+
+
 // вк ютуб фейсбук кынець
 // текст футер
 
 .footer__text
   width: 100%
   background-color: #f4f4f4
+
+@media only screen  and (max-width: 760px)
+  .footer__text
+    .container
+      width: 95%
+      margin: 0 auto
 
 .footer__text-wrap
   padding-top: 4rem

@@ -29,8 +29,21 @@
   grid-column-gap: 2rem
   margin-bottom: 15rem
 
+@media only screen  and (max-width: 760px)
+  .question__main-wrap
+    grid-template-columns: 1fr
+    grid-row-gap: 2rem
+
 .question__column
   width: 100%
+
+@media only screen  and (max-width: 760px)
+  .question__column
+    width: 95%
+    margin: 0 auto
+    font-size: 2.3rem
+    line-height: 1.5
+    font-family: 'Open Sans'
 
 .question__column-wrap
   display: grid
@@ -80,8 +93,12 @@
 
 @media only screen  and (max-width: 960px)
   .question__text
-    height: 70%
+    height: 90%
     width: 80%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    //margin-bottom: 15px
 
 .question__polygon-wrap
   width: 30%
@@ -125,3 +142,7 @@
   margin-top: 1rem
   p
     margin-bottom: 1.5rem
+
+@media only screen  and (max-width: 760px)
+  .question__text-hide
+    font-size: 2.1rem

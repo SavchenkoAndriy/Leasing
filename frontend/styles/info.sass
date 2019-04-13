@@ -8,6 +8,11 @@
   background: url(../img/bg-info.jpg)
   background-size: cover
 
+@media only screen  and (max-width: 760px)
+  .info
+    height: 90vh
+
+
 .info-wrap
   width: 100%
   height: 75%
@@ -17,12 +22,21 @@
   align-items: center
   justify-content: center
 
+@media only screen  and (max-width: 760px)
+  .info-wrap
+    width: 95%
+    height: 80%
+
 .overlay
   width: 90%
   height: 90%
   margin: 5% auto
   display: grid
   grid-template-rows: 1fr 1fr 1fr 1px 1fr 1fr
+
+@media only screen  and (max-width: 760px)
+  .overlay
+    grid-template-rows: 1fr 1fr 1.5fr 1px 1fr 0
 
 .info__title
   width: 100%
@@ -33,11 +47,21 @@
   text-align: center
   font-size: 3.8rem
 
+@media only screen  and (max-width: 760px)
+  .info__title
+    font-size: 3.5rem
+    line-height: 1.2
+    margin: 0 auto
+
 .info__text-leader
   width: 100%
   height: 70%
   display: grid
   grid-template-rows: 1fr 1fr
+
+@media only screen  and (max-width: 760px)
+  .info__text-leader
+    height: 90%
 
 .text-leader__wrap
   width: 100%
@@ -47,6 +71,10 @@
   justify-content: center
   text-align: center
   font-size: 1.8rem
+
+@media only screen  and (max-width: 760px)
+  .text-leader__wrap
+    align-items: flex-start
 
 .info__list
   width: 100%
@@ -65,15 +93,34 @@
   align-items: center
   justify-content: center
 
+@media only screen  and (max-width: 760px)
+  .info__list-wrap
+    height: 100%
+    font-size: 1.7rem
+    line-height: 1.5
+    align-items: flex-start
+
 .info__list-column
   width: 100%
   height: 100%
   display: grid
   grid-template-columns: 1fr 1fr
 
+@media only screen  and (max-width: 760px)
+  .info__list-column
+    display: grid
+    grid-template-rows: 50% 50%
+    grid-template-columns: 1fr
+    height: 80%
+
 .info__list-row
   display: grid
   grid-template-rows: 1fr 1fr
+
+@media only screen  and (max-width: 760px)
+  .info__list-row
+    width: 100%
+    height: 100%
 
 .info__list-row-wrap
   width: 100%
@@ -88,11 +135,21 @@
   align-items: flex-start
   justify-content: flex-start
 
+@media only screen  and (max-width: 760px)
+  .list-row__polygon-wrap
+    width: 4vh
+    height: 4vh
+
 .list-row__polygon
   width: 60%
   height: 40%
   background-color: #FF4500
   clip-path: polygon(38% 77%, 100% 0, 100% 8%, 38% 100%, 0 48%, 0 40%)
+
+@media only screen  and (max-width: 760px)
+  .list-row__polygon
+    width: 50%
+    height: 50%
 
 .list-row__text
   display: flex
@@ -123,6 +180,10 @@
   display: flex
   align-items: center
   justify-content: center
+
+@media only screen  and (max-width: 760px)
+  .info__slider
+    display: none
 
 .info__slider-wrap
   height: 100%
