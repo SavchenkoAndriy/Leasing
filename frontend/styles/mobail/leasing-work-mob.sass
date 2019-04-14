@@ -16,6 +16,10 @@
     width: 0
     height: 0
 
+@media only screen  and (max-width: 760px)
+  .leasing-question__header-text
+    text-align: center
+
 .leasing-work-mob__wrap
   width: 100%
   height: 80%
@@ -111,7 +115,7 @@
   line-height: 1.5
   color: white
 
-// question !!!!!!!!!!!!!! доробить!!!!!!!!!!!!!!!!!!!!!
+// question
 
 .leasing__question-mob
   background-color: white
@@ -120,48 +124,6 @@
   .leasing__question-mob
     display: none
 
-.leasing-question__main-mob
-  display: grid
-  grid-template-rows: 1fr 0.5fr 1fr 1fr
-
-
-.row__wrap-no-img-mob
-  height: 100%
-  width: 100%
-  display: grid
-  grid-template-rows: 1fr 2fr
-
-.row__title-mob
-  display: flex
-  align-items: flex-start
-  justify-content: center
-  text-align: center
-  font-size: 2rem
-
-.row__text-mob
-  color: #666666
-  width: 80%
-  margin: 0 auto
-  display: flex
-  align-items: flex-start
-  justify-content: center
-  text-align: center
-  font-size: 1.5rem
-
-.row__img-wrap-mob
-  width: 25%
-  height: 100%
-  img
-    width: 100%
-    height: auto
-
-.row__wrap-mob
-  height: 100%
-  width: 100%
-  display: grid
-  grid-template-rows: 3fr 1fr 3fr
-
-
 .leasing-question__wrap-mob
   color: black
   height: 90%
@@ -169,3 +131,55 @@
   margin-top: 5%
   display: grid
   grid-template-rows: 1fr 7fr 1fr
+
+.leasing-question__main-mob__wrap
+  width: 80%
+  height: auto
+  margin: 0 auto
+  font-size: 1.7rem
+  text-align: center
+
+.question__main-mob__img
+  width: 100%
+  height: 15vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.question__main-mob__img-wrap
+  width: 15vh
+  height: 15vh
+  border-radius: 100%
+  background-color: #f4f4f4
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    height: 10vh
+    width: 10vh
+
+.question__main-mob__title
+  font-weight: 400
+  line-height: 1.5
+  width: 100%
+  height: 10vh
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 2.5rem
+  color: #333333
+
+.question__main-mob__text
+  width: 100%
+  height: 15vh
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  color: #666666
+
+@media only screen  and (max-width: 360px)
+  .question__main-mob__text
+    height: 16vh
+    font-size: 1.4rem
+    margin-bottom: 10px
+    margin-top: 10px

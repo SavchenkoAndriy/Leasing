@@ -76,6 +76,11 @@ a
   display: grid
   grid-template-rows: 2fr 5fr
 
+@media only screen  and (max-width: 1024px)
+  .intro__wrap
+    grid-template-rows: 20% 80%
+
+
 .intro__head
   display: grid
   grid-template-rows: 2fr 1fr
@@ -91,6 +96,11 @@ a
   width: 100%
   display: grid
   grid-template-columns: 5fr 2fr 1fr
+
+@media only screen  and (max-width: 1024px)
+  .head-content-wrap
+    grid-template-columns: 2fr 1.5fr 1fr
+
 
 .head-content__number
   display: flex
@@ -154,18 +164,18 @@ a
 .navigation__button
   display: flex
   justify-content: center
-  height: 5rem
+  height: 8vh //5rem
   align-items: center
   font-size: 1.5rem
   text-align: center
 
 .navigation__button:hover
   background-color: rgba(255,255,255,1)
-  border-top: 0.3rem rgb(241, 89, 32) solid
-  height: 4.7rem
+  border-top: 0.5vh rgb(241, 89, 32) solid
+  height: 7.5vh //4.7rem
   transition-duration: 0.3s
   a
-    margin-bottom: 0.3rem
+    margin-bottom: 0.5vh
     transition-duration: 0.3s
     color: black
 
@@ -175,17 +185,17 @@ a
   a
     display: flex
     justify-content: center
-    height: 5rem
+    height: 8vh //5rem
     align-items: center
     text-decoration: none
 
 .active-hover
   background-color: rgba(255,255,255,1)
-  border-top: 0.3rem rgb(241, 89, 32) solid
-  height: 4.7rem
+  border-top: 0.5vh rgb(241, 89, 32) solid
+  height: 7.5vh //4.7rem
 
 .act
-  margin-bottom: 0.3rem
+  margin-bottom: 0.5vh
   color: black
 
 .baffler
@@ -203,6 +213,12 @@ a
 .intro__main
   display: grid
   grid-template-rows: 2fr 2fr 1fr
+  font-size: 6.8rem
+
+@media only screen  and (max-width: 1400px)
+  .intro__main
+    grid-template-rows: 40% 40% 20%
+    font-size: 6rem
 
 .intro__main-header
   display: grid
@@ -210,10 +226,13 @@ a
   div
     display: flex
     align-items: center
-    font-size: 6.8rem
 
 .intro__main-header-one
   grid-row-start: 2
+
+@media only screen  and (max-width: 1024px)
+  .intro__main-header
+    grid-template-rows: 1fr 1fr
 
 .intro__main-header-two
   grid-row-start: 3
@@ -241,6 +260,11 @@ a
 @media only screen  and (max-width: 960px)
   .main-form__button
     grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 5rem
+
+@media only screen  and (max-width: 1365px)
+  .main-form__button
+    grid-template-columns: 1fr 1fr 1fr 0.5fr
     grid-column-gap: 5rem
 
 .button-click
