@@ -17,6 +17,7 @@
     width: 95%
 
 .action-car-wrap__more
+  height: 95%
   display: grid
   grid-template-rows: 1fr 6fr
 
@@ -24,6 +25,13 @@
   .action-car-wrap__more
     height: 100%
     margin: 0 auto
+    grid-template-rows: 16% 84%
+
+@media only screen  and (max-width: 360px)
+  .action-car-wrap__more
+    height: 100%
+    margin: 0 auto
+    grid-template-rows: 15% 85%
 
 .action-car__title
   display: grid
@@ -35,11 +43,19 @@
   align-items: center
   font-size: 3.5rem
 
+@media only screen  and (max-width: 360px)
+  .action-car__title-head
+    text-align: center
+
 .action-car__title-foot
   display: flex
   justify-content: center
   font-size: 1.7rem
   text-align: center
+
+@media only screen  and (max-width: 360px)
+  .action-car__title-foot
+    align-items: center
 
 .action-car__main
   display: grid
@@ -49,6 +65,13 @@
   .action-car__main
     display: grid
     grid-template-columns: 1fr
+    grid-template-rows: 100%
+
+@media only screen  and (max-width: 360px)
+  .action-car__main
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
 
 .action-car__main-block
   display: grid
@@ -58,6 +81,14 @@
   .action-car__main-block
     display: grid
     grid-template-rows: 1fr 0.6rem 1.5fr
+
+@media only screen  and (max-width: 360px)
+  .action-car__main-block
+    display: grid
+    grid-template-rows: 40% 0.6rem 60%
+
+.main-block__content
+  height: 100%
 
 .main-block__content-wrap
   width: 90%
