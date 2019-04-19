@@ -5,6 +5,7 @@ import './modules/question.js';
 import './modules/navigation.js';
 import './modules/info.js';
 import './modules/footer.js';
+import './modules/office';
 
 $(function(){
     // робим маски плагіном

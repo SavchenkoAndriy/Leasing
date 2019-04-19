@@ -1,4 +1,5 @@
 let gulp = require('gulp'),
+    //GoogleMapsLoader = require('google-maps');
     sass = require('gulp-sass'),// sass в сss
     prefix = require('gulp-autoprefixer'),// тегам в css дає кросбраузні префікси
     browserSync = require('browser-sync').create(), //обновля після зміни файлів.
